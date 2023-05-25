@@ -1,0 +1,414 @@
+:root {
+	--color-enfasis: rgb(80, 80, 240);
+	--another-color: #339494;
+	--max-screen-y: calc(100vh - 10px); 
+}
+
+body {
+	background-color: black;
+}
+
+.supercontainer {
+	height: var(--max-screen-y);
+}
+
+.mainimage {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	opacity: 0.4;
+}
+
+.hero {
+	color: white;
+	position: relative;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.navbar {
+	position: relative;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	margin-top: 10%;
+}
+
+.button-navbar {
+	display: none;
+	position: absolute;
+}
+
+.brand {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 25px;
+	letter-spacing: 10px;
+	color: white;
+}
+
+.brand img {
+	width: 5%;
+	height: 5%;
+	filter: invert();
+}
+
+.navbar ul {
+	display: flex;
+	justify-content: center;
+	margin-right: 90px;
+}
+
+.navbar li {
+	padding-left: 90px;
+	list-style: none;
+}
+
+.navbar a {
+	text-decoration: none;
+	list-style: none;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 17px;
+	color: white;
+	background-color: var(--another-color);
+	border-radius: 10px;
+	padding: 10px;
+	transition: 0.5s ease-in;
+}
+
+.navbar a:hover {
+	color: black;
+	background: white;
+}
+
+.presentation {
+	position: relative;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 15px;
+	color: white;
+	padding: 10px 30px 10px 30px;
+	align-items: center;
+	text-align: center;
+	border-radius: 40px;
+	margin: 30px 40px 30px 40px;
+}
+
+
+.relleno {
+	position: relative;
+	color: white;
+	margin-top: 100px;
+}
+
+.relleno ol {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	list-style: none;
+}
+
+.relleno li {
+	padding: 0px 50px;
+	font-size: 30px;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+.buttons {
+	display: flex;
+	flex-direction: row;
+	position: absolute;
+	left: 70%;
+	top: 5%;
+}
+
+.social-button {
+	padding-left: 80px;
+}
+
+
+.about {
+	position: relative;
+	/* border: 1px red solid; */
+}
+
+.about .title {
+	text-align: center;
+	color: white;
+	font-size: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 30px;
+}
+
+.photography {
+	display: flex;
+	flex-direction: row;
+}
+
+.photography img {
+	width: 30%;
+	margin: 30px;
+	border-radius: 20px;
+}
+
+.pharagraph {
+	color: white;
+	font-size: 18px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	margin: 30px;
+}
+
+.photography button {
+
+	border: none;
+	background: var(--another-color);
+	border-radius: 5px;
+	padding: 10px;
+	margin-top: 90px;
+	transition: all 0s ease;
+}
+
+.photography button a {
+	text-decoration: none;
+	color: white;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.photography button:hover {
+	background-color: white;
+}
+
+.photography button a:hover {
+	color: black;
+}
+
+
+.services-container {
+	display: flex;
+	overflow-x: auto;
+	position: relative;
+}
+
+.title {
+	color: white;
+	text-align: center;
+	font-size: 24px;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.services-container .slider-item {
+	width: 100%;
+	object-fit: cover;
+	padding: 20px;
+	margin: 20px;
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	background: #333;
+}
+
+.services-container .slider-item img {
+	width: 100%;
+	border-radius: 20px;
+}
+
+.services-container .slider-item p {
+	color: white;
+	font-size: 18px;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	margin: 15px 10px 0px 10px;
+}
+
+.services-container .slider-item h2 {
+	color: white;
+	font-size: 24px;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.services-container .scroll-button {
+	display: none;
+}
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+
+	.navbar ul {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.navbar li {
+		padding: 20px;
+	}
+
+
+	.about {
+		position: none;
+		margin-top: 700px;
+	}
+
+	.presentation {
+		background-color: var(--another-color);
+	}
+
+	.mainimage {
+		height: 100%;
+	}
+
+	.navbar ul {
+		display: none;
+	}
+
+	.hero {
+		display: none;
+	}
+
+	.buttons {
+		position: relative;
+		flex-direction: row;
+		left: 0%;
+		top: 0%;
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+
+	}
+
+	.social-button {
+		display: flex;
+		padding: 10px;
+	}
+
+	.brand img {
+		width: 15%;
+		height: 15%;
+	}
+
+	.relleno {
+		position: none;
+		display: flex;
+	}
+
+	.relleno ol {
+		display: flex;
+		width: 100%;
+		flex-direction: column;
+	}
+
+	.relleno li {
+		color: white;
+		padding-left: 0px;
+		padding-top: 20px;
+	}
+
+	.photography {
+		flex-direction: column;
+	}
+
+	.photography img {
+		width: 80%;
+		border-radius: 10px;
+	}
+
+	.button-navbar {
+		position: relative;
+		display: block;
+		margin: 20px 20px 20px 20px;
+	}
+
+	.button-navbar i {
+		font-size: 25px;
+	}
+
+}
+
+
+
+.contact-me {
+	margin-top: 40px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	background-color: #339494;
+	justify-content: center;
+	align-items: center;
+	border-radius: 20px;
+	color: white;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.contact-me a {
+	text-decoration: none;
+	color: #333;
+	font-size: 40px;
+}
+
+@media screen and (max-width: 768px) {
+	.services-container {
+		display: flex;
+		width: 100%;
+		height: 100vh;
+		overflow-x: scroll;
+		scroll-snap-type: x mandatory;
+	}
+
+
+	.services-container .slider-item {
+		flex: 0 0 80%;
+		width: 100%;
+		scroll-snap-align: center;
+		object-fit: cover;
+		background: none;
+
+	}
+
+	.services-container .slider-item h2 {
+		font-size: 24px;
+		font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	}
+
+	.services-container .slider-item img {
+		width: 100%;
+	}
+
+	.services-container .slider-item p {
+		font-size: 18px;
+		padding-top: 10px;
+		text-align: center;
+		font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+		margin: 15px 10px 0px 10px;
+	}
+
+
+	/* .scroll-button {
+		display: block;
+		position: sticky;
+		background-color: black;
+		color: var(--another-color);
+		border: none;
+		font-size: 35px;
+		border: 1px red solid;
+	} */
+
+	/* .scroll-next {
+		right: 10px;
+	}
+
+	.scroll-prev {
+		left: 10px;
+	} */
+
+
+}
